@@ -297,6 +297,8 @@
 									<include>org.javassist:javassist</include>
 								</includes>
 							</artifactSet>
+							<!-- remove all classes of dependencies that are not used by the project -->
+							<minimizeJar>true</minimizeJar>
 							<shadeSourcesContent>true</shadeSourcesContent>
 						</configuration>
 					</execution>
